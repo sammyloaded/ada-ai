@@ -413,123 +413,142 @@ body {
     letter-spacing: 0%;
     vertical-align: middle;
 }
-.terminal-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    color: white;
+
+/* Case Study Section  */
+.case-study-section {
     margin-top: 50px;
-    padding: 16px 80px;
-}
-.container-footer {
-    width: 389px;
-    height: 434px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    border: 0.97px solid #1B1E2380;
-    border-radius: 10px;
-}
-.container-footer h2{
-    font-weight: 500;
-    font-style: medium;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0%;
-    padding: 41px 116px;
-}
-
- .container-footer2 {
-    /* width: 802.67px; */
-    padding: 50px;
-    border-radius: 18px;
-    box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.05),
-        0 20px 50px rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: auto auto;
-    gap: 40px 60px;
+  padding: 80px 5%;
+  background: #1B1E23;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  background-image: url(assets/hero-bg.png);
 }
 
 
-.container-logo {
-    grid-column: 1 / span 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container-logo img {
-    height: 30px;
-    object-fit: contain;
-}
-
-.container-logo p {
-    color: #a78bfa;
-    font-size: 18px;
-    font-weight: 900;
-    font-style: black;
-    cursor: pointer;
-    transition: 0.3s ease;
+.case-study-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
 }
 
 
-.container-box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: left;
-}
-
-.container-box h3 {
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.container-box p {
-    font-size: 14px;
-    color: #cbd5e1;
+.case-left,
+.case-right {
+  background: linear-gradient(145deg, #1B1E2380, #16191D80);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px;
+  position: relative;
 }
 
 
-.container-text h3 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #d1d5db;
+.case-left h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.case-btn {
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #7b5cff, #a855f7);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.case-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* RIGHT CARD */
+.case-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo-placeholder {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff3b3b;
+}
+
+.case-link {
+  color: #9d7bff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.case-link:hover {
+  text-decoration: underline;
+}
+
+/* CONTENT GRID */
+.case-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+}
+
+/* STATS */
+.case-stats .stat {
+  margin-bottom: 30px;
+}
+
+.case-stats h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.case-stats p {
+  color: #9aa0b5;
+  font-size: 14px;
 }
 
 
-.container-footer2:hover {
-    transform: translateY(-3px);
-    transition: 0.3s ease;
+.quote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c7cbe2;
+  margin-bottom: 30px;
 }
 
-.tag {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    align-items: center;
-    gap: 20px;
-    padding-top: 20px;
-}
-.tag p{
-    
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 18.56px;
-    letter-spacing: 0%;
-    vertical-align: middle;
 
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+.author-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #2b2f45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.author h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.author span {
+  font-size: 13px;
+  color: #9aa0b5;
+}
+
+
 /* FOOTER */
 .footer {
     margin-top: 80px;
