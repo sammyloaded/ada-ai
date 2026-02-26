@@ -420,7 +420,8 @@ body {
     text-align: center;
     gap: 24px;
     color: white;
-    padding: 16px 80px 79px 80px;
+    margin-top: 50px;
+    padding: 16px 80px;
 }
 .container-footer {
     width: 389px;
@@ -532,60 +533,60 @@ body {
 /* FOOTER */
 .footer {
     color: #fff;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 446px;
-    background-color: rgb(10, 8, 12);
+    padding: 80px 20px;
 }
-.footer-logo {
-    padding: 60px 0px 152px 168px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-.footer-text {
-    width: 683px;
-    display: flex;
-    flex-direction: row;
-    gap: 140px;
-    padding: 60px 168px 80px 278px;
 
-}
-.ada-logo {
-    width: 82.05px;
-    height: 40.29px;
-    
-}
-.media {
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    width: 17px;
-    gap: 24px;
-    padding-top: 24px;
+    justify-content: space-between;
+    gap: 80px;
 }
-.industries,
-.legal,
-.inspire {
+
+.footer-brand {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    text-align: left;
+    gap: 30px;
 }
-.footer-text p {
-    font-weight: 600;
-    font-style: medium;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0%;
-    color: #959595;
+
+.logo {
+    height: 40px;
+    width: auto;
 }
-.span {
-    color: #fff;
-    font-weight: 800;
-    font-style: bold;
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.column h4 {
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.column a {
+    text-decoration: none;
+    color: #959595;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.column a:hover {
+    color: #9977D4;
 }
 
 @media (max-width: 450px) {
